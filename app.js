@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const carteRoute = require("./routes/carte");
-const userRoute = require("./routes/user");
+/* const userRoute = require("./routes/user");*/
 const mongoose = require("mongoose");
 
 mongoose
@@ -27,6 +27,6 @@ app.use((req, res, next) => {
 });
 app.use(bodyParser.json());
 app.use("/api/carte", carteRoute);
-app.use("/api/user", userRoute);
+/*app.use("/api/user", userRoute);*/
 
 module.exports = app;

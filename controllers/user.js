@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt");
+/* const bcrypt = require("bcrypt");
 const User = require("../models/user");
 const { error } = require("console");
 
@@ -39,3 +39,4 @@ exports.signUp = (req, res, next) => {
     })
     .catch((error) => res.status(404).json({ error }));
 };
+*/
